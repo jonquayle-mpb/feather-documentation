@@ -38,13 +38,26 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Welcome",
-        "pages": [
-          "pages/welcome/principles",
-          "pages/welcome/onboarding/for-designers",
-          "pages/welcome/onboarding/for-engineers",
-          "pages/welcome/design-system-workflow",
-          "pages/welcome/component-status"
+        "tab": "Feather Design System",
+        "groups": [
+          {
+            "group": "Getting started",
+            "pages": ["pages/featherDesignSystem/principles"]
+          },
+          {
+            "group": "Onboarding",
+            "pages": [
+              "pages/featherDesignSystem/designers",
+              "pages/featherDesignSystem/engineers"
+            ]
+          },
+          {
+            "group": "Workflow",
+            "pages": [
+              "pages/featherDesignSystem/design-system-workflow",
+              "pages/featherDesignSystem/component-status"
+            ]
+          }
         ]
       },
       {
@@ -92,23 +105,10 @@
           {
             "group": "Getting started",
             "pages": [
-              "pages/welcome/setting-up",
-              "pages/welcome/principles",
               "index",
               "boilerplatePages/quickstart",
               "boilerplatePages/development"
             ]
-          },
-          {
-            "group": "Onboarding",
-            "pages": [
-              "pages/welcome/onboarding/for-designers",
-              "pages/welcome/onboarding/for-engineers"
-            ]
-          },
-          {
-            "group": "Updates",
-            "pages": ["pages/welcome/component-status"]
           },
           {
             "group": "Customization",
@@ -146,7 +146,7 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:jon.quayle@.com"
+        "href": "mailto:jon.quayle@mpb.com"
       }
     ],
     "primary": {
