@@ -1,0 +1,52 @@
+---
+title: 'Principles'
+description: 'This page serves as a comprehensive dashboard to understand the current status of each component within our system.'
+icon: 'star'
+---
+
+## Best practices
+All decisions around Feather Design System should be data-informed and based on research, user testing and design principles best practices.
+
+## Design Principles and Heuristics
+We should always make sure that all designs are human-centered and compliant with the [Usability Heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/) by Jakob Nielsen and the [5 Basic Visual Design Principles (Scale, Visual Hierarchy, Balance, Contrast, Gestalt)](https://www.nngroup.com/articles/principles-visual-design/).
+
+Please familiarise yourself with the 4 Principles Of Human-Centered Design by Don Norman [here](https://drive.google.com/file/d/1ilqHl6PXRblXw9-L9Hzzq-DcwmYJ5k9n/view).
+
+## Research
+Like any other product, research and discovery are fundamental to establishing a user-centered design system that ensures our designs are [Functional, Reliable, Usable and Pleasurable](https://www.nngroup.com/articles/theory-user-delight/).
+
+Reference existing research from established organisations like [NNG](https://www.nngroup.com/articles/), [IDF](https://ixdf.org/literature), and [The Baymard Institute](https://baymard.com/blog/archive) to ensure that Toucan standards align with research-based UX best practices.
+
+## Design Thinking Methodology
+By applying the Design Thinking Method to our designs, we ensure that the user is at the center of the project and we focus on solving real problems by following the [5 stages in the Design Thinking Process](https://ixdf.org/literature/article/5-stages-in-the-design-thinking-process).
+
+## Designing and Building Components
+When building out a suite of components, including those utilising third-party libraries, the following principles should be considered:
+
+### Performant
+Does the component do all that it can to ensure minimal performance impact on the website? Things to consider: If icons are used, are they optimised SVGs? Does the component fetch data? If so, does it do so in a performant way? Can the component be lazy-loaded?
+
+### Accessible
+Is the component accessible to our users? Things to consider: If the component has user interaction, can the user interact with it using their keyboard only? Does tabbing through the component work as expected? Have we considered colour blindness? Have we considered prefers-reduced motion preferences?
+
+### Testable
+Is the component easy to test? Things to consider: When writing integration or end-to-end tests, both in JavaScript or Python, is the component easy to use? Does it expose the right sort of selectors, and behave as expected, when receiving expected, native events?
+
+### Documented
+Has a README, Storybook and Figma representation of the component been produced? Things to consider: Would someone picking up the component have all of the information they need?
+
+### Atomic
+Does the component do the right amount of things? Things to consider: Is there a clear separation of concerns between the component and what is implementing it? Does the component do too much? For example, a button disabling itself on click, vs being told it is now disabled by the implementing feature. Does it do what it does well? Can the component be re-used easily, does it style itself without requiring global styles? features that implement the component can and should still dictate certain things, but the component should function fully in isolation.
+
+## Ethos
+Regardless of what we are building with our design system, our goals and outcomes should align with the following principles and purposes:
+
+**We create trust.** We aim to be honest and ethical in the way we design and build our products. Our goal is to build reliable products and services that help our customers to succeed.
+
+**We embrace accessibility.** We aim to be inclusive and welcome accessibility requirements as design constraints which help us create great experiences for everyone.
+
+**We design for real users.** Our design process isn't just focused on building products for people, it's aimed at creating them with people. This means we assume we don't know every real user's need or desire and are continually testing and learning to continuously adding value to our products.
+
+**We build consistency.** Consistency is how we align on our values, share our learnings, and design using a common language. Every component was created to work together to help create a consistent customer experience; each touchpoint should feel familiar and meet their needs in the simplest way possible.
+
+**We design for flexibility.** Every user is different and so is the device and their internet access. The foundation of our system has been designed and built to gracefully adjust to these factors to always offer the best experience possible.

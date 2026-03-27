@@ -1,0 +1,22 @@
+---
+title: 'Component status'
+description: 'This page serves as a comprehensive dashboard to understand the current status of each component within our system.'
+icon: 'check'
+---
+
+## Legend
+
+| Property | Description                           |
+| -------- | ------------------------------------- |
+| <Badge color="green">Up to date</Badge>          | The component fully aligns with our latest design and technical standards. It is safe and recommended for use.                             |
+| <Badge color="orange">Update required</Badge>    | The component needs visual or technical updates or may not be connected to design tokens. It remains valid and should be used while being progressively improved.                          |
+| <Badge color="red">Missing</Badge>   | The component has been approved or designed but is not yet ready for use, as it awaits further design or development. It may be available for contribution. |
+| <Badge color="gray">Deprecated</Badge>   | The component is no longer recommended and will be removed in future updates. |
+| <Badge color="surface">N/A</Badge>   | The component does not apply to the respective platform, and there are no current plans to adapt it. However, this status may change in the future. |
+
+## Status
+
+| Property                                 | Design                                     | React                                      |
+| ---------------------------------------- | ------------------------------------------ | ------------------------------------------ |
+| Accordion                                | <Badge color="green">Up to date</Badge>    | <Badge color="green">Up to date</Badge>    |
+| Badge                                    | <Badge color="green">Up to date</Badge>    | <Tooltip headline="Needs Feather integration" tip="This component needs integrating into the Feather React library." cta="Storybook"><Badge color="orange">Update required</Badge></Tooltip>    |

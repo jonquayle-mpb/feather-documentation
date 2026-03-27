@@ -1,87 +1,142 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "MPB Feather Design System",
+  "appearance": {
+    "default": "light",
+    "strict": false
+  },
+  "background": {
+    "color": {
+      "light": "#FFFFFF",
+      "dark": "#0B002B"
+    }
+  },
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#FF18BD",
+    "light": "#FF18BD",
+    "dark": "#0B002B"
+  },
+  "fonts": {
+    "heading": {
+      "family": "SuisseIntl",
+      "source": "/fonts/SuisseIntl-Bold.woff2",
+      "format": "woff2",
+      "weight": 700
+    },
+    "body": {
+      "family": "SuisseIntl",
+      "source": "/fonts/SuisseIntl-Book.woff2",
+      "format": "woff2",
+      "weight": 400
+    }
+  },
+  "icons": {
+    "library": "fontawesome"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
+        "tab": "Welcome",
+        "pages": [
+          "pages/welcome/principles",
+          "pages/welcome/onboarding/for-designers",
+          "pages/welcome/onboarding/for-engineers",
+          "pages/welcome/design-system-workflow",
+          "pages/welcome/component-status"
         ]
+      },
+      {
+        "tab": "Foundations",
+        "pages": ["pages/foundations/settings"]
+      },
+      {
+        "tab": "Base components",
+        "pages": ["pages/baseComponents/settings"]
+      },
+      {
+        "tab": "Feature components",
+        "pages": ["pages/featureComponents/settings"]
       },
       {
         "tab": "API reference",
         "groups": [
           {
             "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
+            "pages": ["pages/api-reference/introduction"]
           },
           {
             "group": "Endpoint examples",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "pages/api-reference/endpoint/get",
+              "pages/api-reference/endpoint/create",
+              "pages/api-reference/endpoint/delete",
+              "pages/api-reference/endpoint/webhook"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Resources",
+        "pages": [
+          "pages/resources/figma",
+          "pages/resources/storybook",
+          "pages/resources/resell",
+          "pages/resources/reserve"
+        ]
+      },
+      {
+        "tab": "Boilerplate",
+        "groups": [
+          {
+            "group": "Getting started",
+            "pages": [
+              "pages/welcome/setting-up",
+              "pages/welcome/principles",
+              "index",
+              "boilerplatePages/quickstart",
+              "boilerplatePages/development"
+            ]
+          },
+          {
+            "group": "Onboarding",
+            "pages": [
+              "pages/welcome/onboarding/for-designers",
+              "pages/welcome/onboarding/for-engineers"
+            ]
+          },
+          {
+            "group": "Updates",
+            "pages": ["pages/welcome/component-status"]
+          },
+          {
+            "group": "Customization",
+            "pages": [
+              "pages/essentials/settings",
+              "pages/essentials/navigation"
+            ]
+          },
+          {
+            "group": "Writing content",
+            "pages": [
+              "pages/essentials/markdown",
+              "pages/essentials/code",
+              "pages/essentials/images",
+              "pages/essentials/reusable-snippets"
+            ]
+          },
+          {
+            "group": "AI tools",
+            "pages": [
+              "pages/ai-tools/cursor",
+              "pages/ai-tools/claude-code",
+              "pages/ai-tools/windsurf"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -91,7 +146,7 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:jon.quayle@.com"
       }
     ],
     "primary": {
@@ -102,15 +157,15 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {

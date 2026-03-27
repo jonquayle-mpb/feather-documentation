@@ -1,0 +1,44 @@
+---
+title: 'Design system workflow'
+description: 'This page highlights how the design system gets worked on, evolved and progressed through to the final product.'
+icon: 'arrows-split-up-and-left'
+---
+
+## Design
+Figma is the primary environment used by the Design System team to ideate, define, and maintain the system’s architecture, visual language, and interaction patterns.
+
+Figma supports a branching workflow that closely mirrors Git. Updates to the Feather Design System are developed in isolated branches and are only merged into the production branch once they meet quality and readiness standards. This approach ensures that incomplete or unvalidated design work is not published.
+
+Components merged into the production branch of the Feather Design System are considered “Designed.” A component is only classified as “Released” once it has been fully implemented in code.
+
+The Feather Foundations, Base Components, Feature Components, Re.Sell platform, and Re.Serve platform libraries enable designers to reuse system components across project files (e.g. feature work or tickets). Components are centrally maintained, meaning that updates made to a master component propagate automatically (when manually updated per Figma file) to all instances across files, ensuring consistency and scalability.
+
+The [Figma Developer Reference File]([ref/dev](https://www.figma.com/design/ajXdwGemAsMFYtPdTZsaUT/Feather-DS-Development-Reference?node-id=0-1&t=oUMo4W4nNmrzXM3Y-1)) serves as a central resource for shared component flows, page flows, and animation prototypes. It also provides a comprehensive overview of all variables, styles, and components within the design system. This file is accessible to both designers (via Design mode) and engineers (via Dev mode), supporting cross-functional collaboration and implementation accuracy.
+
+### Deprecating components and styles
+The aim with Feather Design System is to make components, styles and variables as straightforward to use, but as flexible as possible.
+
+Deprecating components or styles can be a big choice to make when managing a design system, as it requires cooperation from the users of the design system in regards to manually switching over the deprecated component to the newly released component, warning of the deprecation, and a fair amount of time to make the necessary updates. This can at times break a design and/or prototype, and so the decision to deprecate a component in favour of releasing an entirely new version of that component is not taken lightly.
+
+Deprecated components will be left within the library files and prepended with .[DEPRECATED]. The addition of the '.' in front of the component name will omit the deprecated component from the library and it will not possible to pull it into any files (if it is already used in a file it will still be usable). It is left within the library so there is enough time for the update to take place and the deprecated component will still exist temporarily, so designs and prototypes will not break, but it will be removed after a certain amount of time.
+
+The following reasons are valid when deciding to deprecate a component:
+
+- The new functional or visual needs of the component are such a considerable upgrade that it would make sense to create a new component. We have to consider this aspect from the code side also, as Feather is aligned as close as it can be with the React codebase.
+- From time to time Figma will update the features of their service. With these updates can come new ways of working which allow us to streamline our design components, making them smarter and easier and more flexible to work with. Adding new layout, prototype or variables features is a definite way to break older components that don't utilise these features, and so is a good point in time to deprecate a component in favour or an upgraded version.
+
+This will always be communicated ahead of time, with instructions and documentation given on how to use new components and upgrade deprecated components.
+
+## Engineering handover
+The Feather documentation platform (this platform) is only be updated once designs have been formally approved and are ready for implementation in the live product - this is the job of the Design Systen Team. This maintains alignment between documented guidance and production-ready design assets. The [Figma Developer Reference File]([ref/dev](https://www.figma.com/design/ajXdwGemAsMFYtPdTZsaUT/Feather-DS-Development-Reference?node-id=0-1&t=oUMo4W4nNmrzXM3Y-1)) will also receive updates to be in line with what is the latest styles and components.
+
+The [Component status](/component-status.mdx) page highlights whether styles or components have been implemented in Design or the Feather React codebase. The Feather documentation platform includes a dedicated [Releases page](/releases.mdx), which captures a summary of updates, much like any other digital product. These release notes are used in design and squad discussions to help prioritise design system update work and inform the creation of Jira tickets.
+
+## Release
+How do we track design tasks?
+
+There is specific Design System Update Jira board for the creation of tickets that relate to just updating the design sytem styles or components. We have done this because it allows the Design System Team to keep track of their work as it moves through to production. These tickets can be included alongside squad specific design and engineering tickets for projects that include design system updates.
+
+The Design team will work on priority with Product Managers to get these tickets into sprints.
+
+Once the coded work on a Design System component from a Jira ticket has been completed it is considered ‘Released’.
