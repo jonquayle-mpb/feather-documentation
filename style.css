@@ -1,4 +1,257 @@
-/*Overiding link styling*/
+:root {
+    /* ===== Brand Colors ===== */
+    --colors-brand-primary: #0b002b;
+    --colors-brand-primary-hover: #3c3355;
+    --colors-brand-secondary: #ff18bd;
+    --colors-brand-secondary-hover: #ff46ca;
+    --colors-brand-tertiary: #7d5da8;
+    --colors-brand-tertiary-hover: #553c77;
+    --colors-brand-accent: #ffbc49;
+    --colors-brand-neutral: #ffffff;
+
+    /* ===== Text Colors ===== */
+    --colors-text-primary: #6d6680;
+    --colors-text-secondary: #0b002b;
+    --colors-text-tertiary: #6d6680;
+    --colors-text-disabled: #6d6680;
+    --colors-text-placeholder: #9d99aa;
+    --colors-text-inverse: #ffffff;
+    --colors-text-accent: #ff18bd;
+    --colors-text-accent-inverse: #ffbc49;
+
+    /* ===== Surface Colors ===== */
+    --colors-surface-primary: #ffffff;
+    --colors-surface-secondary: #f3f2f4;
+    --colors-surface-tertiary: #e7e5ea;
+    --colors-surface-accent: #ffdda3;
+    --colors-surface-accent-light: #ffe8c2;
+    --colors-surface-accent-subtle: #fff9f0;
+    --colors-surface-inverse: #0b002b;
+    --colors-surface-disabled: #e7e5ea;
+
+    /* ===== Border Colors ===== */
+    --colors-border-primary: #ceccd5;
+    --colors-border-secondary: #0b002b;
+    --colors-border-tertiary: #e7e5ea;
+    --colors-border-light: #e7e5ea;
+    --colors-border-accent: #ffbc49;
+    --colors-border-interactive: #ff18bd;
+    --colors-border-interactive-hover: #ff46ca;
+    --colors-border-disabled: #ceccd5;
+
+    /* ===== Interactive Colors ===== */
+    --colors-interactive-primary: #0b002b;
+    --colors-interactive-primary-hover: #3b2450;
+    --colors-interactive-primary-active: #0b002b;
+    --colors-interactive-secondary: #ff18bd;
+    --colors-interactive-secondary-hover: #ff18bd;
+    --colors-interactive-secondary-active: #ff18bd;
+    --colors-interactive-tertiary: #0b002b;
+    --colors-interactive-tertiary-hover: #ceccd5;
+    --colors-interactive-tertiary-active: #0b002b;
+    --colors-interactive-inverse: #ffffff;
+    --colors-interactive-inverse-hover: #f3f2f4;
+    --colors-interactive-inverse-active: #e7e5ea;
+    --colors-interactive-focus: rgba(11, 0, 43, 0.4);
+    --colors-interactive-disabled: #e7e5ea;
+
+    /* ===== State Colors ===== */
+    --colors-state-success: #0e8929;
+    --colors-state-success-light: #e6fdeb;
+    --colors-state-warning: #ff7a00;
+    --colors-state-warning-light: #ffe4cc;
+    --colors-state-error: #e9000e;
+    --colors-state-error-light: #fde6e7;
+    --colors-state-info: #2733a9;
+    --colors-state-info-light: #e9ebf6;
+
+    /* ===== Overlay Colors ===== */
+    --colors-overlay-base: rgba(11, 0, 43, 0.2);
+    --colors-overlay-dark: rgba(11, 0, 43, 0.24);
+    --colors-overlay-light: rgba(255, 255, 255, 0.36);
+    --colors-overlay-modal: rgba(11, 0, 43, 0.4);
+
+    /* ===== Special Colors ===== */
+    --colors-sustainability: #288055;
+    --colors-sustainability-green-accent: #64a591;
+    --colors-accessibility: #6200fe;
+    --colors-selection: #ff18bd;
+
+    /* ===== Brand Gradients ===== */
+    --gradients-brand-primary: radial-gradient(
+        69.15% 50% at 100% 50%,
+        #ff79bc 0%,
+        #ff0aac 100%
+    );
+
+    /* ===== Interactive Gradients ===== */
+    --gradients-interactive-primary: linear-gradient(
+        84deg,
+        rgba(255, 24, 189, 0.25) 16.1%,
+        rgba(255, 24, 189, 0.7) 33.89%,
+        rgba(255, 24, 189, 0.7) 49.06%,
+        rgba(255, 24, 189, 0.3) 71.07%,
+        rgba(255, 24, 189, 0.3) 92.93%
+    );
+    --gradients-interactive-primary-inverse: linear-gradient(
+        84deg,
+        rgba(255, 255, 255, 0.25) 16.1%,
+        rgba(255, 255, 255, 0.7) 33.89%,
+        rgba(255, 255, 255, 0.7) 49.06%,
+        rgba(255, 255, 255, 0.3) 71.07%,
+        rgba(255, 255, 255, 0.3) 92.93%
+    );
+
+    /* ===== Surface Gradients ===== */
+    --gradients-surface-light-subtle: linear-gradient(
+        0deg,
+        #e7e5ea 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    --gradients-surface-fade-left: linear-gradient(
+        90deg,
+        #f3f2f4 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    --gradients-surface-fade-right: linear-gradient(
+        270deg,
+        #f3f2f4 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    --gradients-surface-fade-down: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 5.28%,
+        #f3f2f4 92.65%
+    );
+    --gradients-surface-fade-down-full-opacity: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 5.28%,
+        #f3f2f4 100%
+    );
+
+    /* ===== Layout Spacing ===== */
+    --layout-spacing-2: 0.2rem;
+    --layout-spacing-4: 0.4rem;
+    --layout-spacing-8: 0.8rem;
+    --layout-spacing-12: 1.2rem;
+    --layout-spacing-16: 1.6rem;
+    --layout-spacing-24: 2.4rem;
+    --layout-spacing-32: 3.2rem;
+    --layout-spacing-40: 4rem;
+    --layout-spacing-48: 4.8rem;
+    --layout-spacing-56: 5.6rem;
+    --layout-spacing-64: 6.4rem;
+    --layout-spacing-72: 7.2rem;
+    --layout-spacing-96: 9.6rem;
+
+    /* ===== Typography ===== */
+    /* ===== Font Family ===== */
+    --typography-font: suisse-intl, sans-serif;
+
+    /* ===== Font Weight ===== */
+    --typography-weight-light: lighter;
+    --typography-weight-regular: normal;
+    --typography-weight-bold: bold;
+
+    /* ===== Line Height ===== */
+    --typography-line-height-tight: 1.25;
+    --typography-line-height-snug: 1.37;
+    --typography-line-height-normal: 1.5;
+    --typography-line-height-relaxed: 1.62;
+    --typography-line-height-loose: 1.75;
+
+    /* ===== Letter Spacing ===== */
+    --typography-letter-spacing-tightest: -0.1rem;
+    --typography-letter-spacing-tighter: -0.05rem;
+    --typography-letter-spacing-tight: -0.025rem;
+    --typography-letter-spacing-normal: 0;
+
+    /* ===== Font Sizes ===== */
+    --typography-font-size-xs: 1rem;
+    --typography-font-size-sm: 1.2rem;
+    --typography-font-size-base: 1.6rem;
+    --typography-font-size-lg: 1.8rem;
+    --typography-font-size-xl: 2.4rem;
+    --typography-font-size-2xl: 1.8rem;
+    --typography-font-size-3xl: 2.1rem;
+    --typography-font-size-4xl: 2.8rem;
+    --typography-font-size-5xl: 3.6rem;
+    --typography-font-size-6xl: 4.8rem;
+    --typography-font-size-7xl: 6rem;
+
+    /* ===== Effects ===== */
+    /* ===== Shadows ===== */
+    --effects-shadow-sm: 0 0.1rem 0.2rem 0 rgba(0, 49, 68, 0.5);
+    --effects-shadow-base: 0 0.4rem 2rem 0 rgba(0, 49, 68, 0.1);
+    --effects-shadow-md: 0 0.8rem 2.4rem 0 rgba(0, 49, 68, 0.1);
+    --effects-shadow-lg: 0 1rem 4rem 0 rgba(0, 49, 68, 0.1);
+    --effects-shadow-xl: 0 2rem 6rem 0 rgba(0, 49, 68, 0.1);
+    --effects-shadow-sticky: 0 2rem 6rem 0 rgba(0, 49, 68, 0.1);
+
+    /* ===== Border Radius ===== */
+    --effects-radius-none: 0;
+    --effects-radius-sm: 0.2rem;
+    --effects-radius-base: 0.4rem;
+    --effects-radius-md: 0.6rem;
+    --effects-radius-lg: 0.8rem;
+    --effects-radius-xl: 1.2rem;
+    --effects-radius-2xl: 1.6rem;
+    --effects-radius-3xl: 2.4rem;
+    --effects-radius-full: 9999px;
+
+    /* ===== Focus Effects ===== */
+    --effect-focus-ring: rgba(11, 0, 43, 0.4);
+    --effect-focus-outline: #2733a9;
+
+    /* ===== Border Widths ===== */
+    --effect-border-sm: 0.1rem;
+    --effect-border-md: 0.2rem;
+    --effect-border-lg: 0.4rem;
+
+    /* ===== Background Filter ===== */
+    --effects-background-filter-blur: blur(3.2rem);
+
+    /* ===== Animations ===== */
+    /* ===== Default Animation ===== */
+    --animations-default-duration: 0.3s;
+    --animations-default-timing-function: ease-in-out;
+
+    /* ===== Animation Durations ===== */
+    --animations-duration-instant: 0ms; /* 0ms */
+    --animations-duration-fast: 0.15ms; /* 150ms */
+    --animations-duration-normal: 0.2ms; /* 200ms */
+    --animations-duration-slow: 0.3ms; /* 300ms */
+    --animations-duration-slower: 0.5ms; /* 500ms */
+
+    /* ===== Easing Functions ===== */
+    --animations-easing-linear: cubic-bezier(0, 0, 1, 1); /* Linear easing */
+    --animations-easing-ease-in: cubic-bezier(0.4, 0, 1, 1); /* Ease in */
+    --animations-easing-ease-out: cubic-bezier(0, 0, 0.2, 1); /* Ease out */
+    --animations-easing-ease-in-out: cubic-bezier(
+        0.4,
+        0,
+        0.2,
+        1
+    ); /* Ease in-out */
+    --animations-easing-bounce: cubic-bezier(
+        0.68,
+        -0.55,
+        0.265,
+        1.55
+    ); /* Bounce easing */
+}
+
+/* ===== Text styling ===== */
+
+#content-area div.mdx-content .prose > span[data-as="p"],
+#content-area div.mdx-content.prose > span[data-as="p"] > strong {
+    color: var(--colors-text-secondary);
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+}
+
+/* ===== Link styling ===== */
+
 /*.prose :where(a):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
     border-bottom: 2px solid #ff18bd;
     transition: 0.2s all ease-out;
