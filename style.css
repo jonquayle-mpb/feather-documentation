@@ -241,16 +241,39 @@
     ); /* Bounce easing */
 }
 
+/* ===== Layout overrides ===== */
+
+#almond-background-color {
+    background-color: var(--colors-surface-secondary);
+}
+
+#content-area {
+    max-width: 54rem;
+}
+
+#content-container {
+    border: 1px solid var(--colors-border-tertiary);
+}
+
 /* ===== Text styling ===== */
 
-#content-area div.mdx-content .prose > span[data-as="p"],
+/*#content-area div.mdx-content .prose > span[data-as="p"],
 #content-area div.mdx-content.prose > span[data-as="p"] > strong {
     color: var(--colors-text-secondary);
     font-weight: 700;
     letter-spacing: -0.02rem;
-}
+}*/
 
 /* ===== Link styling ===== */
+
+/* ===== Sidebar ===== */
+li > .group {
+    transition: 0.15s all ease-out;
+}
+
+li > .group:hover {
+    background-color: var(--colors-surface-tertiary);
+}
 
 /*.prose :where(a):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
     border-bottom: 2px solid #ff18bd;

@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "almond",
   "name": "MPB Feather Design System",
   "appearance": {
     "default": "light",
@@ -55,7 +55,8 @@
             "group": "Workflow",
             "pages": [
               "pages/featherDesignSystem/design-system-workflow",
-              "pages/featherDesignSystem/component-status"
+              "pages/featherDesignSystem/component-status",
+              "pages/featherDesignSystem/releases"
             ]
           }
         ]
@@ -66,7 +67,7 @@
       },
       {
         "tab": "Base components",
-        "pages": ["pages/baseComponents/settings"]
+        "pages": ["pages/baseComponents/button"]
       },
       {
         "tab": "Feature components",
